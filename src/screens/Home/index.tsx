@@ -1,10 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+
+import { Header } from '../../components/Header';
+import { Input } from '../../components/Input';
+import { Status } from '../../components/Status';
+
+import { Container } from './styles';
 
 export function Home() {
   return (
-    <View>
-      <Text>Hello world!</Text>
-    </View>
+    <Container>
+      <Header />
+
+      <Input />
+
+      <Status />
+    </Container>
   );
 }

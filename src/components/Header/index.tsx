@@ -1,8 +1,14 @@
 import React from 'react'
-import { View } from 'react-native';
+
+import { Image } from 'react-native';
+import { Container,Logo } from './styles';
+
+import LogoToDo from '../../../assets/images/Logo.png'
 
 export function Header() {
     return (
-        <View />
+        <Container>
+            <Logo source={LogoToDo}/>
+        </Container>
     );
 }
