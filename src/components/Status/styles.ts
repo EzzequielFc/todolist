@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 import {COLORS} from '../../../assets/colors';
 
 export const Container = styled.View`
+  margin-top: 54px;
   height: 56px;
   justify-content: space-between;
   flex-direction: row;
@@ -12,13 +13,13 @@ export const Separator = styled.View`
 `;
 
 export const LabelCreate = styled.Text`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: ${COLORS.BLUE};
 `;
 
 export const LabelComplet = styled.Text`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: ${COLORS.PURPLE};
 `;
