@@ -5,7 +5,14 @@ import {Container, ButtonIcon, Icon, LabelTask} from './styles';
 import Trash from '../../../assets/images/trash/trash.png';
 import Circle from '../../../assets/images/Circle/circle.png';
 
-export function Task() {
+import { ListTask } from '../../screens/Home';
+
+export type Props = {
+  task: ListTask;
+  removeTask: () => void;
+};
+
+export function Task({task, removeTask}: Props) {
   return (
     <Container>
       <ButtonIcon>
@@ -13,10 +20,10 @@ export function Task() {
       </ButtonIcon>
 
       <LabelTask>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+        {task.description}
       </LabelTask>
 
-      <ButtonIcon>
+      <ButtonIcon onPress={removeTask}>
         <Icon source={Trash} />
       </ButtonIcon>
     </Container>

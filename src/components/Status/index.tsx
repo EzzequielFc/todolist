@@ -9,13 +9,17 @@ import {
   LabelCounter,
 } from './styles';
 
-export function Status() {
+type Props = {
+  create: number;
+};
+
+export function Status({create}: Props) {
   return (
     <Container>
       <Separator>
         <LabelCreate>Criadas</LabelCreate>
         <Counter>
-          <LabelCounter>0</LabelCounter>
+          <LabelCounter>{!create? 0 : create}</LabelCounter>
         </Counter>
       </Separator>
 
