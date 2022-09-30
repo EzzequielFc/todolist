@@ -26,5 +26,18 @@ module.exports = {
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
     'no-console': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
   },
 };

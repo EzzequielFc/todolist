@@ -1,19 +1,26 @@
 import React from 'react';
 
-import { Header } from '../../components/Header';
-import { Input } from '../../components/Input';
-import { Status } from '../../components/Status';
+import {Header} from '../../components/Header';
+import {Input} from '../../components/Input';
+import {Status} from '../../components/Status';
+import {Task} from '../../components/Task';
 
-import { Container } from './styles';
+import {Container, Content, Line} from './styles';
 
 export function Home() {
   return (
     <Container>
       <Header />
 
-      <Input />
+      <Content>
+        <Input />
 
-      <Status />
+        <Status />
+
+        <Line />
+
+        <Task />
+      </Content>
     </Container>
   );
 }

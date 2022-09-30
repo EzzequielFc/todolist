@@ -1,21 +1,28 @@
 import * as React from 'react';
 
-import {Container, Separator, Counter, Text, TextCounter} from './styles';
+import {
+  Container,
+  Separator,
+  Counter,
+  LabelCreate,
+  LabelComplet,
+  LabelCounter,
+} from './styles';
 
 export function Status() {
   return (
     <Container>
       <Separator>
-        <Text>Criadas</Text>
+        <LabelCreate>Criadas</LabelCreate>
         <Counter>
-          <TextCounter>0</TextCounter>
+          <LabelCounter>0</LabelCounter>
         </Counter>
       </Separator>
 
       <Separator>
-        <Text>Concluídas</Text>
+        <LabelComplet>Concluídas</LabelComplet>
         <Counter>
-          <TextCounter>0</TextCounter>
+          <LabelCounter>0</LabelCounter>
         </Counter>
       </Separator>
     </Container>
