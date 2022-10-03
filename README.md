@@ -25,8 +25,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 <p align="left">       
-  <img src=".github/mobile-screenshot-1.png" width="35%">
-  <img src=".github/mobile-screenshot-2.png" width="35%">
+  <img src="https://github.com/EzzequielFc/todolist/blob/main/.github/obile-screenshot-1.jpg" width="35%">
+  <img src="https://github.com/EzzequielFc/todolist/blob/main/.github/obile-screenshot-2.jpg" width="35%">
 </p>
 
 
