@@ -25,8 +25,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 <p align="left">       
-  <img src="./.github/mobile-screenshot-1.png" width="35%">
-  <img src="./.github/mobile-screenshot-2.png" width="35%">
+  <img src=".github/mobile-screenshot-1.png" width="35%">
+  <img src=".github/mobile-screenshot-2.png" width="35%">
 </p>
 
 
