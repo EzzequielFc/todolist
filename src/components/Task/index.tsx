@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {Container, ButtonIcon, Icon, LabelTask} from './styles';
 
 import Trash from '../../../assets/images/trash/trash.png';
 import Circle from '../../../assets/images/Circle/circle.png';
+import Mark from '../../../assets/images/Check/check.png';
 
 import { ListTask } from '../../screens/Home';
 
 export type Props = {
   task: ListTask;
   removeTask: () => void;
+  markTask: () => void;
 };
 
-export function Task({task, removeTask}: Props) {
+export function Task({task, removeTask, markTask}: Props) {
+
   return (
     <Container>
-      <ButtonIcon>
-        <Icon source={Circle} />
+      <ButtonIcon onPress={markTask}>
+        <Icon source={task.status ? Mark : Circle} />
       </ButtonIcon>
 
-      <LabelTask>
+      <LabelTask selected={task.status}>
         {task.description}
       </LabelTask>
 

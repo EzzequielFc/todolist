@@ -11,9 +11,10 @@ import {
 
 type Props = {
   create: number;
+  concluded: number;
 };
 
-export function Status({create}: Props) {
+export function Status({create,concluded}: Props) {
   return (
     <Container>
       <Separator>
@@ -26,7 +27,7 @@ export function Status({create}: Props) {
       <Separator>
         <LabelComplet>Concluídas</LabelComplet>
         <Counter>
-          <LabelCounter>0</LabelCounter>
+          <LabelCounter>{!concluded? 0 : concluded}</LabelCounter>
         </Counter>
       </Separator>
     </Container>
